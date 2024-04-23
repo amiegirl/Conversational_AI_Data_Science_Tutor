@@ -18,7 +18,7 @@ model = genai.GenerativeModel(model_name="models/gemini-1.5-pro-latest",
                               system_instruction="""You are a helpful AI Teaching Assistant,
                               Given a Data Science topic, help a the user understand it.
                               You also answer all followup questions as well.
-                              if a question is related to data science, the response should be,
+                              if a question is not related to data science, the response should be,
                               'I may not be able to provide information about this topic' """)
 
 # if chat history not in session, init one
